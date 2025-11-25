@@ -5,7 +5,7 @@
 
 class Fractions {
     public:
-        Fractions() : x(0), y(0) {}
+        Fractions() : x(0), y(1) {}
         Fractions(const int a, const int b) {
             int g = gcd(a, b);
             this->x = a / g;
@@ -243,5 +243,6 @@ class Fractions {
             return (a / gcd(a, b)) * b;  
         } 
 };
+
 
 #endif // FRACTIONS_HPP
